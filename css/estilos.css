@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: rgba(144, 238, 144, 0.459);
+}
+body{
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+
+header{
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+
+}
+
+/*imagenes se mueven*/
+.slider{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 5%;
+}
+.slider ul{
+    display: flex;
+    padding: 0;
+    animation: cambio 20s infinite alternate linear;
+    animation-timing-function: ease-in;
+    width: 400%;
+   
+}
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+.slider img{
+    width: 100%;
+    padding: 0;
+    height: 400px;
+}
+
+@keyframes cambio{
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+
+}
+
+
+
+
+
+
+/*caja enterna al menu fondo*/
+.menu{
+    list-style: armenian ;
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    background-color: rgba(144, 238, 144, 0.459);
+    height:95px;
+}
+
+/*cuadritos verdes con las opcioens*/
+.menu li a, li ul li a{
+    text-decoration: none;
+    padding: 20px;
+    background-color: rgba(241, 206, 2, 0.911);
+    display: flex;
+    align-items: center;
+    color: rgb(14, 110, 255);
+    height: 94px;
+
+}
+
+/*todo el cuadro verde */
+.menu li{
+    display: inline-block;
+}
+
+.menu li a:hover{
+    background-color: rgba(43, 160, 43, 0.918);
+    display: block;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    height:  94px;
+    
+}
+.logo img{
+    
+    color: darkgreen;
+    display: flex;
+}
+.redes{
+    margin: 90px;
+    height: 94px;
+    position: relative;
+    text-align: right;
+    text-decoration: none;
+
+}
+.menu > li { 
+    float: left;
+}
+
+.menu li ul{
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+.menu li:hover > ul {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 140px;
+    top: 90px;
+    margin-left: -2px;
+}
+
+
+ coasa 
+ul, ol {
+list-style: none;
+}
+
+
+h1{
+    margin: auto;
+    text-align: center;
+    color: rgb(0, 38, 255);
+    height: 100px;
+ 
+}
+
+footer{
+    color: white;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    font-style: normal;
+    width: 100%;
+    float: left;
+    background-color: rgb(15, 114, 6);
+    margin-top: auto;
+
+}
